@@ -1,7 +1,7 @@
 /* custom styles */
 
 body {
-  font-family: 'Proxima-Nova', Helvetica, Arial, sans-serif;
+  font-family: 'proxima-Nova', helvetica, arial, sans-serif;
 }
 
 #top-nav {
@@ -14,6 +14,17 @@ body {
     margin-bottom: 0 !important;
   }
 
-header {
-  padding: 0 0 25px 0;
+.site-logo {
+  float: left;
+}
+nav li {
+  display: inline;
+  float: left;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+#main-content {
+  background: url(../images/bg-page.jpg) top center;
+  padding-top: 90px;
 }
