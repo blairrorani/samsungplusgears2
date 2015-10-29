@@ -1,0 +1,19 @@
+/* custom styles */
+
+body {
+  font-family: 'Proxima-Nova', Helvetica, Arial, sans-serif;
+}
+
+#top-nav {
+  height: 35px;
+  text-align: right;
+  padding-top: 10px;
+  background: #f4f4f4;
+}
+  #top-nav p {
+    margin-bottom: 0 !important;
+  }
+
+header {
+  padding: 0 0 25px 0;
+}
