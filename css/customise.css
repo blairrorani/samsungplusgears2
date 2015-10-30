@@ -5,6 +5,14 @@ body {
   color: #666;
 }
 
+h5 {
+  text-transform: uppercase;
+  color: #00D99C;
+  border-bottom: 1px solid #00d99c;
+  padding-bottom: 5px;
+  font-weight: 400;
+}
+
 #top-nav {
   height: 35px;
   text-align: right;
@@ -90,7 +98,8 @@ nav li {
 #main-content {
   background: url(../images/bg-page.jpg) top center;
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
+  min-height: 800px;
 }
 
   #discover #main-content {
@@ -103,18 +112,66 @@ nav li {
     background: url(../images/bg-discover.jpg);
   }
 
-.blue-bg {
-  background: #0093D9;
-  color: #fff;
-  padding: 60px 30px 30px 30px;
-  text-align: center;
+.hero-box,
+.blue-box,
+.small-box {
+  min-height: 300px;
+  height: 300px;
+  margin-bottom: 60px;
   border-radius: 5px;
 }
 
-.blue-bg h2 {
-  border-bottom: 1px solid #fff;
-  padding: 15px;
+.small-box {
+  padding: 30px 30px 30px 30px;
+  text-align: center;
 }
+
+.blue-box {
+  background: #0093D9;
+  color: #fff;
+  text-align: center;
+}
+  .blue-box h5 {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+  }
+  .blue-box:hover {
+    background: #0074AB;
+  }
+
+.black-box {
+    color: #fff;
+    background: #2C2A40;
+  }
+    .black-box:hover {
+      background: #232233;
+    }
+
+.teal-box {
+    color: #fff;
+    background: #42B886;
+  }
+  .teal-box h5 {
+    color: #fff;
+    border-color: #fff;
+  }
+    .teal-box:hover {
+      background: #389C72;
+    }
+
+
+/* buttons */
+
+.button.button-primary {
+  color: #FFF;
+  background-color: transparent !important;
+  border-color: #fff;
+}
+  .button.button-primary:hover {
+    color: #FFF;
+    background-color: #006FA3;
+    border-color: #fff;
+  }
 
 footer {
   background: #1F1D30;
