@@ -2,6 +2,7 @@
 
 body {
   font-family: 'proxima-Nova', helvetica, arial, sans-serif;
+  color: #666;
 }
 
 #top-nav {
@@ -15,16 +16,114 @@ body {
   }
 
 .site-logo {
-  float: left;
+  max-width: 302px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
+
+@media (min-width: 1000px) {
+  .site-logo {
+    float: left;
+  }
+}
+
+a {
+  color: #0093D9;
+  text-decoration: none;
+}
+  a:hover {
+    color: #0093D9;
+  }
+
+nav {
+  padding-bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+nav ul {
+  margin-bottom: 0;
+  padding-bottom: 14px;
+}
+
 nav li {
   display: inline;
-  float: left;
-  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
+
+@media (min-width: 1000px) {
+  li.last-link {
+    padding-right: 0;
+  }
+}
+
+  nav li a {
+    padding-bottom: 15px;
+    color: #666;
+  }
+  nav li a:hover {
+    border-bottom: 3px solid;
+  }
+
+  .selected-link {
+    border-bottom: 3px solid;
+    color: #0093D9;
+  }
+
+  @media (min-width: 1000px) {
+    nav {
+      float: right;
+      margin-top: 40px;
+    }
+      nav li {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+  }
 
 #main-content {
   background: url(../images/bg-page.jpg) top center;
-  padding-top: 90px;
+  padding-top: 30px;
+  padding-bottom: 90px;
 }
+
+  #discover #main-content {
+    background: url(../images/bg-community.jpg);
+  }
+  #watch #main-content {
+    background: url(../images/bg-dashboard.jpg);
+  }
+  #specs #main-content {
+    background: url(../images/bg-discover.jpg);
+  }
+
+.blue-bg {
+  background: #0093D9;
+  color: #fff;
+  padding: 60px 30px 30px 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.blue-bg h2 {
+  border-bottom: 1px solid #fff;
+  padding: 15px;
+}
+
+footer {
+  background: #1F1D30;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+  .samsung-logo {
+    float: right;
+    display: block;
+  }
