@@ -25,6 +25,7 @@ h5 {
 
 .site-logo {
   max-width: 302px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -112,16 +113,38 @@ nav li {
     background: url(../images/bg-discover.jpg);
   }
 
+  .show-home {
+      background: #fff url(../images/all-watches.jpg) center center;
+  }
+  .show-discover {
+      background: url(../images/module-watch.jpg) top left;
+  }
+  .show-videos {
+      background: #fff url(../images/black-watch.jpg) top left no-repeat;
+  }
+    .video-1 {
+      background: #fff url(../images/black-watch.png) center center no-repeat;
+    }
+    .video-2 {
+      background: #fff url(../images/blue-watch.png) center center no-repeat;
+    }
+
+  .show-specs {
+      background: url(../images/black-watch.jpg) top right;
+  }
+
 .hero-box,
 .blue-box,
 .small-box {
-  min-height: 300px;
-  height: 300px;
+  min-height: 400px;
+  height: 400px;
   margin-bottom: 60px;
   border-radius: 5px;
 }
 
 .small-box {
+  min-height: 300px;
+  height: 300px;
   padding: 30px 30px 30px 30px;
   text-align: center;
 }
@@ -159,9 +182,16 @@ nav li {
       background: #389C72;
     }
 
+.play-button {
+  width: 82px;
+  margin: 158px auto;
+  display: block;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
 
 /* buttons */
-
 .button.button-primary {
   color: #FFF;
   background-color: transparent !important;
