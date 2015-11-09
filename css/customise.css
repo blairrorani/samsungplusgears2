@@ -13,6 +13,8 @@ h5 {
   font-weight: 400;
 }
 
+.img {max-width: 100%;}
+
 #top-nav {
   height: 35px;
   text-align: right;
