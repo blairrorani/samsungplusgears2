@@ -219,9 +219,9 @@ nav li {
     }
 
 .light-box {
-    color: #CCCACB;
+    color: #52555A;
     background: #F3F2ED;
-    min-height: 630px;
+    min-height: 600px;
   }
   .light-box h5 {
     color: #52555A;
@@ -231,7 +231,7 @@ nav li {
   .dark-box {
       color: #fff;
       background: #939598;
-      min-height: 630px;
+      min-height: 600px;
     }
     #login .dark-box h5 {
       color: #fff;
