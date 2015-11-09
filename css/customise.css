@@ -289,6 +289,28 @@ nav li {
     border-color: #fff;
   }
 
+  .button.button-login {
+    color: #FFF;
+    background-color: #3AB486;
+    border-color: #3AB486;
+  }
+    .button.button-login:hover {
+      color: #FFF;
+      background-color: #3AB486;
+      border-color: #3AB486;
+    }
+
+    .button.button-dark {
+      color: #52555A;
+      background-color: transparent !important;
+      border-color: #52555A;
+    }
+      .button.button-dark:hover {
+        color: #52555A;
+        background-color: transparent !important;
+        border-color: #52555A;
+      }
+
 footer {
   background: #1F1D30;
   padding-top: 25px;
