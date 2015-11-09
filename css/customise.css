@@ -13,7 +13,16 @@ h5 {
   font-weight: 400;
 }
 
-.img {max-width: 100%;}
+img {
+  max-width: 100%;
+}
+
+#login header {
+  min-height: 78px;
+}
+  #login nav {
+    display: none;
+  }
 
 #top-nav {
   height: 35px;
@@ -23,6 +32,10 @@ h5 {
 }
   #top-nav p {
     margin-bottom: 0 !important;
+  }
+
+  #login #top-nav {
+    display: none;
   }
 
 .site-logo {
@@ -104,6 +117,8 @@ nav li {
       }
   }
 
+
+
 #main-content {
   background: url(../images/bg-page.jpg) top center;
   padding-top: 30px;
@@ -119,6 +134,9 @@ nav li {
   }
   #specs #main-content {
     background: url(../images/bg-discover.jpg);
+  }
+  #login #main-content {
+    background: #DDD9D5;
   }
 
   .show-home {
@@ -157,6 +175,16 @@ nav li {
   text-align: center;
 }
 
+#login .small-box {
+  text-align: left;
+}
+
+#discover .small-box h5,
+#specs .small-box h5 {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
 .blue-box {
   background: #0093D9;
   color: #fff;
@@ -190,6 +218,31 @@ nav li {
       background: #389C72;
     }
 
+.light-box {
+    color: #CCCACB;
+    background: #F3F2ED;
+    min-height: 630px;
+  }
+  .light-box h5 {
+    color: #52555A;
+    border-color: #CCCACB;
+    text-align: center;
+  }
+  .dark-box {
+      color: #fff;
+      background: #939598;
+      min-height: 630px;
+    }
+    #login .dark-box h5 {
+      color: #fff;
+      border-color: #C9CACC;
+      text-align: center;
+    }
+
+    .dark-text {
+      color: #C9CACC;
+    }
+
 .play-button {
   width: 82px;
   margin: 158px auto;
@@ -198,6 +251,31 @@ nav li {
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
+/* pic-boxes */
+.edge-box {
+  color: #fff;
+  background: url(../images/colour-edge.jpg) center center no-repeat;
+}
+  .edge-box:hover {
+    background: url(../images/black-edge.jpg) center center no-repeat;
+  }
+
+.gear-box {
+  color: #fff;
+  background: url(../images/colour-gear.jpg) center left no-repeat;
+}
+
+  .gear-box:hover {
+    background: url(../images/black-gear.jpg) center left no-repeat;
+  }
+
+.note-box {
+  color: #fff;
+  background: url(../images/colour-note.jpg) center center no-repeat;
+}
+  .note-box:hover {
+    background: url(../images/black-note.jpg) center center no-repeat;
+  }
 
 /* buttons */
 .button.button-primary {
@@ -216,18 +294,24 @@ footer {
   padding-top: 25px;
   padding-bottom: 25px;
   color: #fff;
+  font-size: 14px;
+}
+
+.copyright,
+.samsung-logo {
+  text-align: center;
 }
 
 .copyright {
-  float: left;
-}
-
-.samsung-logo {
-  float: right;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 1000px) {
   .copyright {
-
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .samsung-logo {
+    text-align: right;
   }
 }
