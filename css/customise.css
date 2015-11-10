@@ -129,7 +129,7 @@ nav li {
   #discover #main-content {
     background: url(../images/bg-community.jpg);
   }
-  #watch #main-content {
+  #experience #main-content {
     background: url(../images/bg-dashboard.jpg);
   }
   #specs #main-content {
@@ -148,13 +148,6 @@ nav li {
   .show-videos {
       background: #fff url(../images/black-watch.jpg) top left no-repeat;
   }
-    .video-1 {
-      background: #fff url(../images/black-watch.png) center center no-repeat;
-    }
-    .video-2 {
-      background: #fff url(../images/blue-watch.png) center center no-repeat;
-    }
-
   .show-specs {
       background: url(../images/black-watch.jpg) top right;
   }
@@ -175,12 +168,18 @@ nav li {
   text-align: center;
 }
 
+#discover .small-box,
+#specs .small-box {
+  position: relative;
+}
+
 #login .small-box {
   text-align: left;
 }
 
 #discover .small-box h5,
-#specs .small-box h5 {
+#specs .small-box h5,
+#experience .small-box h5 {
   border-bottom: 1px solid #fff;
   color: #fff;
 }
@@ -245,10 +244,24 @@ nav li {
 
 .play-button {
   width: 82px;
-  margin: 158px auto;
+  margin: 58px auto;
   display: block;
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+  .play-button-special {
+    margin: 58px auto;
+  }
+@media (min-width: 1000px) {
+  .play-button-special {
+    margin: 25px auto;
+  }
+}
+@media (min-width: 1114px) {
+  .play-button-special {
+    margin: 58px auto;
+  }
 }
 
 /* pic-boxes */
@@ -278,6 +291,7 @@ nav li {
   }
 
 /* buttons */
+
 .button.button-primary {
   color: #FFF;
   background-color: transparent !important;
@@ -309,6 +323,14 @@ nav li {
         color: #52555A;
         background-color: transparent !important;
         border-color: #52555A;
+      }
+
+      .bottom-button {
+        bottom: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin-left: -30px;
       }
 
 footer {
